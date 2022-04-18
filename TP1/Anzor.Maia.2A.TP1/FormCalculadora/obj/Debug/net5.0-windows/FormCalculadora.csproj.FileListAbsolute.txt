@@ -19,3 +19,4 @@ C:\Users\maiam\source\repos\Anzor.Maia.2A.TP1\FormCalculadora\obj\Debug\net5.0-w
 C:\Users\maiam\source\repos\Anzor.Maia.2A.TP1\FormCalculadora\bin\Debug\net5.0-windows\Entidades.dll
 C:\Users\maiam\source\repos\Anzor.Maia.2A.TP1\FormCalculadora\bin\Debug\net5.0-windows\Entidades.pdb
 C:\Users\maiam\source\repos\Anzor.Maia.2A.TP1\FormCalculadora\obj\Debug\net5.0-windows\FormCalculadora.csproj.CopyComplete
+C:\Users\maiam\source\repos\Anzor.Maia.2A.TP1\FormCalculadora\obj\Debug\net5.0-windows\FormCalculadora.Properties.Resources.resources
