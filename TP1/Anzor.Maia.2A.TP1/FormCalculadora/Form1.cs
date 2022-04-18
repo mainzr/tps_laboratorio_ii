@@ -17,12 +17,20 @@ namespace FormCalculadora
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// cierra el programa al presionar el boton cerrar
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
+        /// <summary>
+        /// limpia todas las casillas y el operador seleccionado anteriormente
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             txtNumero1.Text = "";
@@ -31,7 +39,11 @@ namespace FormCalculadora
             lblResultado.Text = "";
             
         }
-
+        /// <summary>
+        /// carga los tipos de operadores disponibles
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Form1_Load(object sender, EventArgs e)
         {
             cmbOperador.Items.Add(" ");
@@ -56,15 +68,23 @@ namespace FormCalculadora
 
             return resultado;
         }
+        /// <summary>
+        /// realiza la operacion seleccionada al realizar click en el boton
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnOperar_Click(object sender, EventArgs e)
         {
             double resultado = 0;
 
+            txtNumero1.Text = txtNumero1.Text.Replace('.', ',');
+            txtNumero2.Text = txtNumero2.Text.Replace('.', ',');
 
             if (cmbOperador.Text == "")
             {
                 cmbOperador.Text = "+";
             }
+
 
             if (double.TryParse(txtNumero1.Text, out resultado) == false)
             {
@@ -85,10 +105,15 @@ namespace FormCalculadora
             }
 
 
-
+         
 
         }
 
+        /// <summary>
+        /// convierte el numero a bianario al seleccionar el boton
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnConvertirABinario_Click(object sender, EventArgs e)
         {
             Operando objeto = new Operando();
@@ -104,6 +129,11 @@ namespace FormCalculadora
 
         }
 
+        /// <summary>
+        /// convierte el numero a decimal al seleccionar el boton
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnConvertirADecimal_Click(object sender, EventArgs e)
         {
             Operando objeto = new Operando();
@@ -118,7 +148,11 @@ namespace FormCalculadora
             }
 
         }
-
+        /// <summary>
+        /// evento que se va a activar al intentar cerrar el form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             DialogResult variable;
