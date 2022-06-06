@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\maiam\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\maiam\\.nuget\\packages"
+    ]
+  }
+}
