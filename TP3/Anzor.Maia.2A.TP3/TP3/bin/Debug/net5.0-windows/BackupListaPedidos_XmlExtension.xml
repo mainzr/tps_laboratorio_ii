@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfCliente xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Cliente>
+    <NumeroCliente>1071</NumeroCliente>
+    <UnaComida xsi:type="ComidaChina">
+      <Nombre>
+China-Cerdo agridulce</Nombre>
+      <Precio>1600</Precio>
+      <TipoComida>China</TipoComida>
+    </UnaComida>
+    <Nombre>Mikel</Nombre>
+    <Apellido>Damiral</Apellido>
+    <Direccion>Av Montes de Oca</Direccion>
+    <NumeroTelefono>116644758201</NumeroTelefono>
+    <Email>mdamiral4@army.mil</Email>
+    <NroCliente>1071</NroCliente>
+  </Cliente>
+  <Cliente>
+    <NumeroCliente>1681</NumeroCliente>
+    <UnaComida xsi:type="ComidaCoreana">
+      <Nombre>
+Coreana-Bulgogi</Nombre>
+      <Precio>1200</Precio>
+      <TipoComida>Coreana</TipoComida>
+    </UnaComida>
+    <Nombre>Jose</Nombre>
+    <Apellido>Alberto</Apellido>
+    <Direccion>Chacarita 600</Direccion>
+    <NumeroTelefono>1136520489</NumeroTelefono>
+    <Email>jose@gmail.com</Email>
+    <NroCliente>1681</NroCliente>
+  </Cliente>
+  <Cliente>
+    <NumeroCliente>1307</NumeroCliente>
+    <UnaComida xsi:type="ComidaJaponesa">
+      <Nombre>
+Japonesa-Gyudon</Nombre>
+      <Precio>1350</Precio>
+      <TipoComida>Japonesa</TipoComida>
+    </UnaComida>
+    <Nombre>Ana</Nombre>
+    <Apellido>Martinez</Apellido>
+    <Direccion>Brasil 2010</Direccion>
+    <NumeroTelefono>1102669854</NumeroTelefono>
+    <Email>ana@gmail.com</Email>
+    <NroCliente>1307</NroCliente>
+  </Cliente>
+</ArrayOfCliente>

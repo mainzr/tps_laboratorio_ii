@@ -22,12 +22,20 @@ namespace TP3
             this.registro = new Registro();
            
         }
-
+        /// <summary>
+        /// cierra el form actual
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
+        /// <summary>
+        /// abre el nuevo formulario , donde se hace alta con informacion del cliente
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnAlta_Click(object sender, EventArgs e)
         {
             frmAlta frmAlta = new frmAlta(registro);
@@ -36,6 +44,11 @@ namespace TP3
            
         }
 
+        /// <summary>
+        /// abre el nuevo formulario donde se hara cmabio de los datos
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnModificar_Click(object sender, EventArgs e)
         {
             frmListaClientes f = new frmListaClientes(registro);

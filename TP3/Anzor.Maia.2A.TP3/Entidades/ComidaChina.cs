@@ -19,6 +19,10 @@ namespace Entidades
 
         }
 
+        /// <summary>
+        /// muestra los datos de comida china
+        /// </summary>
+        /// <returns>retorna la informacion de modo string</returns>
         protected string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
@@ -29,7 +33,10 @@ namespace Entidades
             return sb.ToString();
         }
 
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             return Mostrar();

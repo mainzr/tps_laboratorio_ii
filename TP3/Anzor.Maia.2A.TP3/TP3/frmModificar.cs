@@ -29,7 +29,11 @@ namespace TP3
             get { return this.nuevaList; }
         }
 
-
+        /// <summary>
+        /// carga rich text con los datos de la lista
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void frmModificar_Load(object sender, EventArgs e)
         {
             frmListaClientes formLista = new frmListaClientes(unRegistro);
@@ -40,6 +44,11 @@ namespace TP3
             }
         }
 
+        /// <summary>
+        /// modifica el cliente elegido, y serializa la nueva lista con los nuevos datos
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnModificarDatos_Click(object sender, EventArgs e)
         {
             frmAlta formAlta = new frmAlta(unRegistro);
@@ -79,6 +88,10 @@ namespace TP3
             }
         }
 
+        /// <summary>
+        /// modifica el cliente elegido con los nuevos  datos ingresados
+        /// </summary>
+        /// <returns></returns>
         public bool ModificarEmpleado()
         {
             bool retorno = false;
