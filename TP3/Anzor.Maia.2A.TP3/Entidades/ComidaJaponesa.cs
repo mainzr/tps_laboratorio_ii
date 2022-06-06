@@ -18,7 +18,10 @@ namespace Entidades
 
         }
 
-
+        /// <summary>
+        /// muestra la informacion e la clase comida japonesa
+        /// </summary>
+        /// <returns>la retorna en formato string</returns>
         protected string Mostrar()
         {
             StringBuilder sb = new StringBuilder();

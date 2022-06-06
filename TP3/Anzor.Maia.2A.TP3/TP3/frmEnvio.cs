@@ -35,6 +35,11 @@ namespace TP3
             
         }
 
+        /// <summary>
+        /// muestra por nueva ventana contenido total de la lista
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnFinalizar_Click(object sender, EventArgs e)
         {
             ServicioEnvio servicioEnvio = new ServicioEnvio(this.PlanEnvioElegido);
@@ -49,6 +54,11 @@ namespace TP3
             this.Close();
             
         }
+
+        /// <summary>
+        /// verifica que tipo de comdida fue la elegida
+        /// </summary>
+        /// <returns>retorna el tipo de comida elegida segun boton seleccionado</returns>
         public string EnvioElegido()
         {
 
@@ -69,6 +79,11 @@ namespace TP3
             return elegido;
         }
 
+        /// <summary>
+        /// datos de informacion segun el tipo de plan a elegir
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void rdbBasico_CheckedChanged(object sender, EventArgs e)
         {
            if(this.rdbBasico.Checked == true)
@@ -76,7 +91,11 @@ namespace TP3
                 this.richTxtBox.Text = "\n\n~Cupones de descuento mensuales de 5% en pedidos\n\n";
            }
         }
-
+        /// <summary>
+        /// datos de informacion segun el tipo de plan a elegir
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void rdBEstandar_CheckedChanged(object sender, EventArgs e)
         {
             if(this.rdBEstandar.Checked == true)
@@ -85,6 +104,11 @@ namespace TP3
             }
         }
 
+        /// <summary>
+        /// datos de informacion segun el tipo de plan a elegir
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void rdbPremium_CheckedChanged(object sender, EventArgs e)
         {
             if (this.rdbPremium.Checked == true)

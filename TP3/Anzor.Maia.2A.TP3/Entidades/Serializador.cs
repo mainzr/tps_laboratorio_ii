@@ -11,6 +11,12 @@ namespace Entidades
 {
     public class Serializador
     {
+        /// <summary>
+        /// serializa datos de la lista en archivo xml
+        /// </summary>
+        /// <param name="ruta"></param>
+        /// <param name="lista"></param>
+        /// <returns>retorna true si serializo la lista correctamente</returns>
         public bool SerializarXml(string ruta, List<Cliente> lista)
         {
             bool retorno = true;
@@ -31,10 +37,14 @@ namespace Entidades
             return retorno;
         }
 
+        /// <summary>
+        /// deserializa archivo de tipo xml 
+        /// </summary>
+        /// <param name="ruta"></param>
+        /// <returns>retorna la lista deserializada</returns>
         public List<Cliente> DeserializarXml(string ruta)
         {
-            //string lista = String.Empty;
-            List<Cliente> lista = new List<Cliente>();
+              List<Cliente> lista = new List<Cliente>();
             try
             {
                 using (StreamReader sr = new StreamReader(ruta))
@@ -52,6 +62,12 @@ namespace Entidades
             return lista;
         }
 
+        /// <summary>
+        /// serializa lista en archivo de formato json, 
+        /// </summary>
+        /// <param name="ruta"></param>
+        /// <param name="lista"></param>
+        /// <returns>true si serializo correctamente false caso contrario</returns>
         public bool SerializarJson(string ruta, List<Cliente> lista)
         {
             bool retorno = true;

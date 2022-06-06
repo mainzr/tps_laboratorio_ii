@@ -23,7 +23,11 @@ namespace TP3
             this.listaNueva = new List<Cliente>();
             this.serializar = new Serializador();
         }
-
+        /// <summary>
+        /// carga el rich text con los elemenetos de la lista
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void frmEliminar_Load(object sender, EventArgs e)
         {
             frmListaClientes lista = new frmListaClientes(unRegistro);
@@ -35,6 +39,11 @@ namespace TP3
            
         }
 
+        /// <summary>
+        /// elimina un pedido segun el nro de cliente ingresasdo y serializa la nueva lista
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             frmAlta f = new frmAlta(unRegistro);
@@ -50,6 +59,7 @@ namespace TP3
             {
                 try
                 {
+                    //funcion elimina pedido
                     eliminado = ClientesIguales();
                 }
                 catch (ExcepcionRetornoFalse ex)
@@ -57,17 +67,7 @@ namespace TP3
 
                     MessageBox.Show(ex.Message);
                 }
-               
-                /* foreach (Cliente unCliente in this.unRegistro.Lista)
-                 {
-                     if (unCliente.NroCliente == this.txtBoxNroClienteBuscado.Text)
-                     {
-                        this.unRegistro.Lista.Remove(unCliente);
-                        break;
-                     }
-
-                 }*/
-
+    
                 retorno = this.serializar.SerializarXml(ruta, this.unRegistro.Lista);
 
                 MessageBox.Show("Pedido cancelado correctamente", "Cancelacion exitosa", MessageBoxButtons.OK);
@@ -75,6 +75,10 @@ namespace TP3
             }
         }
 
+        /// <summary>
+        /// verifica cuando dos clientes son iguales y lo elimina
+        /// </summary>
+        /// <returns>true si lo elimino, false caso contrario</returns>
         public bool ClientesIguales()
         {
             bool retorno = false;

@@ -17,6 +17,7 @@ namespace TP3
         string tipoComida;
         Cliente cliente;
         Serializador serializar;
+
         public frmAlta(Registro registro)
         {
             InitializeComponent();
@@ -26,7 +27,7 @@ namespace TP3
             serializar = new Serializador();
         }
 
-        //ctores cliente
+        #region Constructores de cliente
 
         public string NroCliente
         {
@@ -62,7 +63,7 @@ namespace TP3
             get { return this.txtBoxEmail.Text; }
             set { this.txtBoxEmail.Text = value; }
         }
-
+        #endregion
         //ctor comida
         public string ComidaTipo
         {
@@ -88,7 +89,10 @@ namespace TP3
         }
     
 
-
+        /// <summary>
+        /// verifica que boton se elegio de cada tipo de comida
+        /// </summary>
+        /// <returns></returns>
         public string ComidaElegida()
         {
             string valor = "";
@@ -151,6 +155,10 @@ namespace TP3
             return valor;
         }
 
+        /// <summary>
+        /// generador de numero de cliente de tipo aleatorio
+        /// </summary>
+        /// <returns></returns>
         public string NroClienteRan()
         {
             Random ran = new Random();
@@ -159,6 +167,12 @@ namespace TP3
             return clienteRan.ToString();
         }
 
+ 
+        /// <summary>
+        /// instancia un objeto de tipo cliente con los datos ingresados en la lista. Se serializa los nuevos datos de la lista
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnSeguir_Click(object sender, EventArgs e)
         {
             frmEnvio frmEnvio = new frmEnvio(unRegistro);
@@ -166,7 +180,8 @@ namespace TP3
             string ruta = $"{AppDomain.CurrentDomain.BaseDirectory}" + "BackupListaPedidos_XmlExtension.xml";
             bool retorno;
 
-            //validacion campos vacion
+           
+            //validacion campos vacios
             if (String.IsNullOrEmpty(txtBoxNombre.Text) || String.IsNullOrEmpty(txtBoxApellido.Text) || String.IsNullOrEmpty(txtBoxDireccion.Text) ||
                 String.IsNullOrEmpty(txtBoxTel.Text) || String.IsNullOrEmpty(txtBoxEmail.Text) || this.lblTotal.Text == "0")
             {
@@ -209,6 +224,11 @@ namespace TP3
             }
         }
 
+        /// <summary>
+        /// iguala a dos clientes segun numero de cliente.
+        /// </summary>
+        /// <param name="nroCliente"></param>
+        /// <returns> retorna el numero de cliente del cliente encontrado</returns>
         public string BuscarCliente(string nroCliente)
         {
             string retornoNro = "";
@@ -224,6 +244,11 @@ namespace TP3
             return retornoNro;
         }
 
+        /// <summary>
+        /// veifica que boton fue elegido de todos los tipos y cantidades de comidas
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void rdbUdon_CheckedChanged(object sender, EventArgs e)
         {
             if (rdbUdon.Checked)
@@ -240,6 +265,11 @@ namespace TP3
             
         }
 
+        /// <summary>
+        /// veifica que boton fue elegido de todos los tipos y cantidades de comidas
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void rdbGyudon_CheckedChanged(object sender, EventArgs e)
         {
             if (rdbGyudon.Checked)
@@ -255,6 +285,11 @@ namespace TP3
             }
         }
 
+        /// <summary>
+        /// veifica que boton fue elegido de todos los tipos y cantidades de comidas
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void rdbTempura_CheckedChanged(object sender, EventArgs e)
         {
             if (rdbTempura.Checked)
@@ -270,6 +305,11 @@ namespace TP3
             }
         }
 
+        /// <summary>
+        /// veifica que boton fue elegido de todos los tipos y cantidades de comidas
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void rdbBibimbap_CheckedChanged(object sender, EventArgs e)
         {
             if (rdbBibimbap.Checked)
@@ -284,7 +324,11 @@ namespace TP3
                 this.lblTotal.Text = valor.ToString();
             }
         }
-
+        /// <summary>
+        /// veifica que boton fue elegido de todos los tipos y cantidades de comidas
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void rdbTeok_CheckedChanged(object sender, EventArgs e)
         {
             if (rdbTeok.Checked)
@@ -301,6 +345,11 @@ namespace TP3
             }
         }
 
+        /// <summary>
+        /// veifica que boton fue elegido de todos los tipos y cantidades de comidas
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void rdbBulgo_CheckedChanged(object sender, EventArgs e)
         {
             if (rdbBulgo.Checked)
@@ -317,6 +366,11 @@ namespace TP3
             }
         }
 
+        /// <summary>
+        /// veifica que boton fue elegido de todos los tipos y cantidades de comidas
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void rdbPollo_CheckedChanged(object sender, EventArgs e)
         {
             if (rdbPollo.Checked)
@@ -333,6 +387,11 @@ namespace TP3
             }
         }
 
+        /// <summary>
+        /// veifica que boton fue elegido de todos los tipos y cantidades de comidas
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void rdbCerdo_CheckedChanged(object sender, EventArgs e)
         {
             if (rdbCerdo.Checked)
@@ -349,6 +408,11 @@ namespace TP3
             }
         }
 
+        /// <summary>
+        /// veifica que boton fue elegido de todos los tipos y cantidades de comidas
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void rdbRollito_CheckedChanged(object sender, EventArgs e)
         {
             if (rdbRollito.Checked)
@@ -370,11 +434,12 @@ namespace TP3
 
         }
 
-        private void btnSalir_Click(object sender, EventArgs e)
-        {
-
-        }
-
+      
+        /// <summary>
+        /// cierra el fomr actual
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnSalir_Click_1(object sender, EventArgs e)
         {
             this.Close();

@@ -26,7 +26,9 @@ namespace TP3
             aux = new List<Cliente>();
         }
 
-
+        /// <summary>
+        /// retorna o setea el valor de rich text lista
+        /// </summary>
         public string Contenido
         {
             set {this.richTxtLista.Text = value; }
@@ -34,12 +36,21 @@ namespace TP3
         }
 
         
-
+        /// <summary>
+        /// se cerrara el form al hacer clcikc en salir
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
+        /// <summary>
+        /// deserializara la lista de cliente cada vez que se ingresa
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void frmListaClientes_Load(object sender, EventArgs e)
         {
             frmAlta f = new frmAlta(unRegistro);
@@ -77,7 +88,11 @@ namespace TP3
         }
 
 
-
+        /// <summary>
+        /// cierra form actual, abre el siguiente
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void lblModificar_Click(object sender, EventArgs e)
         {
             frmModificar f = new frmModificar(unRegistro);
@@ -88,18 +103,14 @@ namespace TP3
            
         }
 
-        public string Rich(string s)
-        {
-            string valorRich = this.richTxtLista.Text;
-
-            this.richTxtLista.Text += s;
-
-            return valorRich;
-        }
-
+        /// <summary>
+        /// guarda la lista en archivo txt al hacer click en hacer backup
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnBackUp_Click(object sender, EventArgs e)
         {
-
+            /////Escritura de archivo .txt
             string ruta = $"{AppDomain.CurrentDomain.BaseDirectory}" + @"BackupListaPedidos.txt";
 
             if (this.unRegistro.HacerBackUp(this.Contenido, ruta))
@@ -108,6 +119,9 @@ namespace TP3
             }
         }
 
+        /// <summary>
+        /// muestra por el rich lo que contiene la lista
+        /// </summary>
         public void AgregarListaRich()
         {
             
@@ -120,7 +134,11 @@ namespace TP3
                 throw new ExceptionControllers("Excepcion controlada - No se realizo ningun pedido.");
             }
         }
-
+        /// <summary>
+        /// cierra form actual, abre form con donde se eliminara un pedido
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             frmEliminar formEliminar = new frmEliminar(unRegistro);
@@ -129,7 +147,11 @@ namespace TP3
             formEliminar.ShowDialog();
             this.Close();
         }
-
+        /// <summary>
+        /// serializa los datos de la lista en archivo xml 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnBackupXml_Click(object sender, EventArgs e)
         {
             string ruta = $"{AppDomain.CurrentDomain.BaseDirectory}" + "BackupListaPedidos_XmlExtension.xml";
@@ -148,6 +170,11 @@ namespace TP3
 
         }
 
+        /// <summary>
+        /// serializa en archivo lo contenido en la lista con extenison jsnon
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnBackupJson_Click(object sender, EventArgs e)
         {
             string ruta = $"{AppDomain.CurrentDomain.BaseDirectory}" + "BackupListaPedidos_JsonExtension.json";

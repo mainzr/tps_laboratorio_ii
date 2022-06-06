@@ -18,10 +18,14 @@ namespace Entidades
         private Comida unaComida;
         //private ServicioEnvio envio;
 
+        /// <summary>
+        /// /constructor con parametros vacios para serializar json
+        /// </summary>
         public Cliente()
         {
 
         }
+  
         public Cliente(string nombre, string apellido, string direccion, string numeroTelefono, string email, string nroCliente, Comida comida)
         {
             this.nombre = nombre;
@@ -33,6 +37,7 @@ namespace Entidades
             this.unaComida = comida;
            
         }
+        #region Constructores Cliente
         public string NumeroCliente
         {
             get { return this.numeroCliente; }
@@ -81,8 +86,12 @@ namespace Entidades
             get { return this.numeroCliente; }
             set { this.numeroCliente = value; }
         }
-
-        //methods
+        #endregion
+        
+        /// <summary>
+        /// muestra todos los dato del cliente
+        /// </summary>
+        /// <returns>retorna los datos en formato string</returns>
         public string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
@@ -102,7 +111,12 @@ namespace Entidades
 
 
        
-
+        /// <summary>
+        /// sobecarga ==; dos clientes son iguales si tienen el mismo nuemro de cliente
+        /// </summary>
+        /// <param name="clienteUno"></param>
+        /// <param name="clienteDos"></param>
+        /// <returns>true si son iguales , false caso contrario</returns>
         public static bool operator ==(Cliente clienteUno, Cliente clienteDos)
         {
             bool retorno = false;
@@ -114,6 +128,12 @@ namespace Entidades
             return retorno;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="clienteUno"></param>
+        /// <param name="clienteDos"></param>
+        /// <returns></returns>
         public static bool operator !=(Cliente clienteUno, Cliente clienteDos)
         {
             return !(clienteUno == clienteDos);

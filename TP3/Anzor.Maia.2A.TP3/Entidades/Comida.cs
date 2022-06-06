@@ -24,6 +24,7 @@ namespace Entidades
             this.tipoComida = tipoComida;
         }
 
+        #region Constructores
         public string Nombre
         {
             get { return this.nombre; }
@@ -43,7 +44,11 @@ namespace Entidades
         }
 
 
-
+        #endregion
+        /// <summary>
+        /// muestra los datos que hay en comida
+        /// </summary>
+        /// <returns>etorna la informaicon en dato de tipo string</returns>
         public string Mostrar()
         {
             StringBuilder sb = new StringBuilder();

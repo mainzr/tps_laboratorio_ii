@@ -20,7 +20,10 @@ namespace Entidades
 
         }
 
-
+        /// <summary>
+        /// metodo muestra atrbuto de clase comida coreana
+        /// </summary>
+        /// <returns>retorna los datos en formato string</returns>
         public string Mostrar()
         {
             StringBuilder sb = new StringBuilder();

@@ -17,7 +17,7 @@ namespace Entidades
         {
             this.listaClientes = new List<Cliente>();
         }
-
+        #region Constructores
         public List<Cliente> Lista
         {
             get { return this.listaClientes; }
@@ -30,6 +30,13 @@ namespace Entidades
             set {this.path = value; }
         }
 
+        #endregion
+        /// <summary>
+        /// agrega un cliente a la lista si no existe
+        /// </summary>
+        /// <param name="registro"></param>
+        /// <param name="cliente"></param>
+        /// <returns>true si lo agrego con exito false caso contrario</returns>
         public bool AgregarPedido(Registro registro, Cliente cliente)
         {
             bool retorno = false;
@@ -44,7 +51,10 @@ namespace Entidades
             return retorno;
         }
         
-
+        /// <summary>
+        /// muestra la informacion de cada cliente
+        /// </summary>
+        /// <returns>retorna informaicon de tipo stirng</returns>
         public string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
@@ -61,7 +71,11 @@ namespace Entidades
             return Mostrar();
         }
 
-
+        /// <summary>
+        /// busca un cliente sea igual a otro a partir de numero de cliente
+        /// </summary>
+        /// <param name="nroCliente"></param>
+        /// <returns>true si lo encontro, false caso contrario</returns>
         public bool BuscarCliente(string nroCliente)
         {
             bool retorno = false;
@@ -78,7 +92,12 @@ namespace Entidades
         }
 
        
-
+        /// <summary>
+        /// escribe archivo de tipo txt
+        /// </summary>
+        /// <param name="contenido"></param>
+        /// <param name="ruta"></param>
+        /// <returns>retorna true si escribio</returns>
         public bool HacerBackUp(string contenido, string ruta)
         {
             bool retorno = false;
@@ -99,7 +118,11 @@ namespace Entidades
 
             return retorno;
         }
-
+        /// <summary>
+        /// lee archivo de tipo txt.
+        /// </summary>
+        /// <param name="ruta"></param>
+        /// <returns></returns>
         public string LeerArchivo(string ruta)
         {
             string retorno = String.Empty;

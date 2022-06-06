@@ -81,7 +81,7 @@ namespace TP3
             this.lblTipoComida.AutoSize = true;
             this.lblTipoComida.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(226)))), ((int)(((byte)(244)))));
             this.lblTipoComida.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTipoComida.Location = new System.Drawing.Point(331, 46);
+            this.lblTipoComida.Location = new System.Drawing.Point(314, 48);
             this.lblTipoComida.Name = "lblTipoComida";
             this.lblTipoComida.Size = new System.Drawing.Size(156, 23);
             this.lblTipoComida.TabIndex = 6;
@@ -180,7 +180,7 @@ namespace TP3
             this.grbChina.Controls.Add(this.rdbCerdo);
             this.grbChina.Controls.Add(this.rdbPollo);
             this.grbChina.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.grbChina.Location = new System.Drawing.Point(309, 101);
+            this.grbChina.Location = new System.Drawing.Point(292, 103);
             this.grbChina.Name = "grbChina";
             this.grbChina.Size = new System.Drawing.Size(194, 181);
             this.grbChina.TabIndex = 17;
@@ -230,7 +230,7 @@ namespace TP3
             this.grbCoreana.Controls.Add(this.rdbTeok);
             this.grbCoreana.Controls.Add(this.rdbBibimbap);
             this.grbCoreana.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.grbCoreana.Location = new System.Drawing.Point(526, 101);
+            this.grbCoreana.Location = new System.Drawing.Point(509, 103);
             this.grbCoreana.Name = "grbCoreana";
             this.grbCoreana.Size = new System.Drawing.Size(190, 181);
             this.grbCoreana.TabIndex = 18;
@@ -280,7 +280,7 @@ namespace TP3
             this.grbJaponesa.Controls.Add(this.rdbGyudon);
             this.grbJaponesa.Controls.Add(this.rdbUdon);
             this.grbJaponesa.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.grbJaponesa.Location = new System.Drawing.Point(737, 101);
+            this.grbJaponesa.Location = new System.Drawing.Point(720, 103);
             this.grbJaponesa.Name = "grbJaponesa";
             this.grbJaponesa.Size = new System.Drawing.Size(189, 181);
             this.grbJaponesa.TabIndex = 19;
@@ -327,7 +327,7 @@ namespace TP3
             // 
             this.lblTotalTitulo.AutoSize = true;
             this.lblTotalTitulo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.lblTotalTitulo.Location = new System.Drawing.Point(737, 316);
+            this.lblTotalTitulo.Location = new System.Drawing.Point(720, 318);
             this.lblTotalTitulo.Name = "lblTotalTitulo";
             this.lblTotalTitulo.Size = new System.Drawing.Size(134, 19);
             this.lblTotalTitulo.TabIndex = 20;
@@ -337,7 +337,7 @@ namespace TP3
             // 
             this.lblTotal.AutoSize = true;
             this.lblTotal.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.lblTotal.Location = new System.Drawing.Point(868, 316);
+            this.lblTotal.Location = new System.Drawing.Point(850, 318);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(18, 19);
             this.lblTotal.TabIndex = 21;
@@ -367,7 +367,7 @@ namespace TP3
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(309, 47);
+            this.label2.Location = new System.Drawing.Point(292, 49);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(21, 22);
             this.label2.TabIndex = 24;
@@ -389,7 +389,7 @@ namespace TP3
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(955, 433);
+            this.ClientSize = new System.Drawing.Size(942, 433);
             this.ControlBox = false;
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.label2);
