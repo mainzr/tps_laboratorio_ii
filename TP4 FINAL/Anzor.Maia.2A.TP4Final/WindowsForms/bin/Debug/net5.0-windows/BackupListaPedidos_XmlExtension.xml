@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfCliente xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Cliente>
+    <NumeroCliente>1753</NumeroCliente>
+    <UnaComida xsi:type="ComidaChina">
+      <Nombre>
+China-Cerdo agridulce</Nombre>
+      <Precio>1600</Precio>
+      <TipoComida>China</TipoComida>
+    </UnaComida>
+    <Nombre>Maria</Nombre>
+    <Apellido>Agnola</Apellido>
+    <Direccion>Paraguay 500</Direccion>
+    <NumeroTelefono>129384792</NumeroTelefono>
+    <Email>maria@gmail.com</Email>
+    <NroCliente>1753</NroCliente>
+  </Cliente>
+  <Cliente>
+    <NumeroCliente>1600</NumeroCliente>
+    <UnaComida xsi:type="ComidaCoreana">
+      <Nombre>
+Coreana-Bulgogi</Nombre>
+      <Precio>1200</Precio>
+      <TipoComida>Coreana</TipoComida>
+    </UnaComida>
+    <Nombre>Jose</Nombre>
+    <Apellido>Gomez</Apellido>
+    <Direccion>Olavarria 400</Direccion>
+    <NumeroTelefono>23123134</NumeroTelefono>
+    <Email>jose@gmail.com</Email>
+    <NroCliente>1600</NroCliente>
+  </Cliente>
+  <Cliente>
+    <NumeroCliente>1534</NumeroCliente>
+    <UnaComida xsi:type="ComidaJaponesa">
+      <Nombre>
+Japonesa-Gyudon
+Coreana-Tteokbokki
+China-Cerdo agridulce</Nombre>
+      <Precio>4400</Precio>
+      <TipoComida>Japonesa</TipoComida>
+    </UnaComida>
+    <Nombre>Juana</Nombre>
+    <Apellido>Agatha</Apellido>
+    <Direccion>Tacuari 700</Direccion>
+    <NumeroTelefono>3231231</NumeroTelefono>
+    <Email>juana@gmail.com</Email>
+    <NroCliente>1534</NroCliente>
+  </Cliente>
+</ArrayOfCliente>
