@@ -162,13 +162,13 @@ namespace WindowsForms
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.Control;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.label2.Location = new System.Drawing.Point(12, 240);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(156, 15);
+            this.label2.Size = new System.Drawing.Size(152, 15);
             this.label2.TabIndex = 58;
-            this.label2.Text = "(Ejemplo: Activo - Inactivo)";
+            this.label2.Text = "(Ejemplo: activo - inactivo)";
             // 
             // btnSalir
             // 
@@ -203,6 +203,7 @@ namespace WindowsForms
             this.Controls.Add(this.txtBoxNuevoNombreRepar);
             this.Controls.Add(this.lblModificacion);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "frmAltaRepartidor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmRepartidorModificacion";

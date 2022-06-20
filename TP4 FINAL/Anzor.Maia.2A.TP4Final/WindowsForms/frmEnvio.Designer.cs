@@ -144,6 +144,7 @@ namespace WindowsForms
             // 
             this.richTxtBox.Location = new System.Drawing.Point(16, 23);
             this.richTxtBox.Name = "richTxtBox";
+            this.richTxtBox.ReadOnly = true;
             this.richTxtBox.Size = new System.Drawing.Size(217, 185);
             this.richTxtBox.TabIndex = 8;
             this.richTxtBox.Text = "";
@@ -160,6 +161,7 @@ namespace WindowsForms
             this.Controls.Add(this.groupBoxEnvio);
             this.Controls.Add(this.lblTipoEnvio);
             this.Controls.Add(this.lblNroCliente);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "frmEnvio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Despachar";

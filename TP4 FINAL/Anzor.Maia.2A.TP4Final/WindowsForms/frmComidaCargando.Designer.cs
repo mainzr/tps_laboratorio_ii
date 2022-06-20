@@ -78,6 +78,7 @@ namespace WindowsForms
             this.ControlBox = false;
             this.Controls.Add(this.progressBar);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "frmCargadnoComida";
             this.Text = "Procesando Pedido";
             this.Load += new System.EventHandler(this.frmCargadnoComida_Load);
