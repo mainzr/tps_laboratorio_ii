@@ -40,6 +40,7 @@ namespace WindowsForms
             this.richTxtListaRepar.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTxtListaRepar.Location = new System.Drawing.Point(12, 43);
             this.richTxtListaRepar.Name = "richTxtListaRepar";
+            this.richTxtListaRepar.ReadOnly = true;
             this.richTxtListaRepar.Size = new System.Drawing.Size(386, 250);
             this.richTxtListaRepar.TabIndex = 27;
             this.richTxtListaRepar.Text = "";
@@ -86,6 +87,7 @@ namespace WindowsForms
             this.Controls.Add(this.btnAgregarRepa);
             this.Controls.Add(this.richTxtListaRepar);
             this.Controls.Add(this.lblListaPedidos);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "frmListaRepartidores";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Informacion en sistema";

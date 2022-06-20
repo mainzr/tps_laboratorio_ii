@@ -55,6 +55,7 @@ namespace WindowsForms
             this.txtClientesExistentesElimi.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtClientesExistentesElimi.Location = new System.Drawing.Point(11, 21);
             this.txtClientesExistentesElimi.Name = "txtClientesExistentesElimi";
+            this.txtClientesExistentesElimi.ReadOnly = true;
             this.txtClientesExistentesElimi.Size = new System.Drawing.Size(334, 168);
             this.txtClientesExistentesElimi.TabIndex = 0;
             this.txtClientesExistentesElimi.Text = "";
@@ -114,6 +115,7 @@ namespace WindowsForms
             this.Controls.Add(this.lblLnroClienteElimi);
             this.Controls.Add(this.lblClientes);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "frmEliminar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cancelacion de pedido";

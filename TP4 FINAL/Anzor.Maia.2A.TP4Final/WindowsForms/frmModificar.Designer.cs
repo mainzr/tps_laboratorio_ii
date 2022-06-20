@@ -197,6 +197,7 @@ namespace WindowsForms
             this.txtClientesExistentes.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtClientesExistentes.Location = new System.Drawing.Point(6, 21);
             this.txtClientesExistentes.Name = "txtClientesExistentes";
+            this.txtClientesExistentes.ReadOnly = true;
             this.txtClientesExistentes.Size = new System.Drawing.Size(218, 324);
             this.txtClientesExistentes.TabIndex = 0;
             this.txtClientesExistentes.Text = "";
@@ -238,6 +239,7 @@ namespace WindowsForms
             this.Controls.Add(this.txtBoxNuevoNombre);
             this.Controls.Add(this.lblModificacion);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "frmModificar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Modificacion del pedido";

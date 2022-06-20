@@ -115,6 +115,7 @@ namespace WindowsForms
             this.richTxtLista.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTxtLista.Location = new System.Drawing.Point(12, 61);
             this.richTxtLista.Name = "richTxtLista";
+            this.richTxtLista.ReadOnly = true;
             this.richTxtLista.Size = new System.Drawing.Size(287, 395);
             this.richTxtLista.TabIndex = 25;
             this.richTxtLista.Text = "";
@@ -166,6 +167,7 @@ namespace WindowsForms
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lblListaPedidos);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "frmListaClientes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lista de Clientes";

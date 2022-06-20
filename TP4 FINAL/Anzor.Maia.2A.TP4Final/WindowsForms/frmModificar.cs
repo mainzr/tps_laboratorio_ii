@@ -83,6 +83,19 @@ namespace WindowsForms
                 try
                 {
                     encontrado = ModificarEmpleado();
+                    if(encontrado == false)
+                    {
+                        MessageBox.Show("Error al modificar datos del pedido", "Error al ingresar datos", MessageBoxButtons.OK);
+                    }
+                    else
+                    {
+                        retorno = this.serializar.SerializarXml(ruta, this.unRegistro.Lista);
+
+
+                        delegadoAviso("Los datos del clientes se actualizaron correctamente\nLos cambios se veran reflejados en la lista original", "Cambios guardados con exito");
+                        this.Close();
+
+                    }
                 }
                 catch (ExcepcionRetornoFalse ex)
                 {
@@ -90,16 +103,12 @@ namespace WindowsForms
                     MessageBox.Show(ex.Message);
                 }
                 
-                retorno = this.serializar.SerializarXml(ruta, this.unRegistro.Lista);
-
-
-                delegadoAviso("Los datos del clientes se actualizaron correctamente\nLos cambios se veran reflejados en la lista original", "Cambios guardados con exito");
-                this.Close();
-
+               
 
             }
         }
 
+        
         /// <summary>
         /// modifica el cliente elegido con los nuevos  datos ingresados
         /// </summary>
@@ -124,7 +133,7 @@ namespace WindowsForms
                 }
                 else
                 {
-                    throw new ExcepcionRetornoFalse("Excepcion controlada");
+                    throw new ExcepcionRetornoFalse("Error al ingresar datos del empleado,");
                 }
             }
             return retorno;

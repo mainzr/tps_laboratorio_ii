@@ -413,6 +413,7 @@ namespace WindowsForms
             this.Controls.Add(this.txtBoxNombre);
             this.Controls.Add(this.lblTipoComida);
             this.Controls.Add(this.lblRegisto);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "frmAlta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registrar Pedido";
