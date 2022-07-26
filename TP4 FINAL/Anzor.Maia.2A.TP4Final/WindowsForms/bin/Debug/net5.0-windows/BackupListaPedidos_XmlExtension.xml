@@ -1,18 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfCliente xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Cliente>
-    <NumeroCliente>1118</NumeroCliente>
+    <NumeroCliente>1601</NumeroCliente>
+    <UnaComida xsi:type="ComidaCoreana">
+      <Nombre>
+Coreana-Bulgogi
+China-Rollo de primavera</Nombre>
+      <Precio>1600</Precio>
+      <TipoComida>Coreana</TipoComida>
+    </UnaComida>
+    <Nombre>Juan </Nombre>
+    <Apellido>Alvarez</Apellido>
+    <Direccion>Olavarria 500</Direccion>
+    <NumeroTelefono>110599285</NumeroTelefono>
+    <Email>juan@gmail.com</Email>
+    <NroCliente>1601</NroCliente>
+  </Cliente>
+  <Cliente>
+    <NumeroCliente>1841</NumeroCliente>
     <UnaComida xsi:type="ComidaChina">
       <Nombre>
-China-Rollo de primavera</Nombre>
-      <Precio>400</Precio>
+Japonesa-Tempura
+Coreana-Bibimbap
+China-Cerdo agridulce</Nombre>
+      <Precio>4400</Precio>
       <TipoComida>China</TipoComida>
     </UnaComida>
-    <Nombre>f</Nombre>
-    <Apellido>f</Apellido>
-    <Direccion>f</Direccion>
-    <NumeroTelefono>3432434</NumeroTelefono>
-    <Email>f</Email>
-    <NroCliente>1118</NroCliente>
+    <Nombre>Lucas</Nombre>
+    <Apellido>Gonzalez</Apellido>
+    <Direccion>Pasco 200</Direccion>
+    <NumeroTelefono>110688395</NumeroTelefono>
+    <Email>lucas@gmail.com</Email>
+    <NroCliente>1841</NroCliente>
+  </Cliente>
+  <Cliente>
+    <NumeroCliente>1031</NumeroCliente>
+    <UnaComida xsi:type="ComidaCoreana">
+      <Nombre>
+Coreana-Tteokbokki</Nombre>
+      <Precio>1450</Precio>
+      <TipoComida>Coreana</TipoComida>
+    </UnaComida>
+    <Nombre>Marta</Nombre>
+    <Apellido>Aguirre</Apellido>
+    <Direccion>Av San Juan 2500</Direccion>
+    <NumeroTelefono>110599385</NumeroTelefono>
+    <Email>marta@gmail.com</Email>
+    <NroCliente>1031</NroCliente>
   </Cliente>
 </ArrayOfCliente>
