@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Threading;
 using System.Windows.Forms;
 using Entidades;
-using System.Linq;
+
 
 namespace WindowsForms
 {
@@ -58,7 +58,7 @@ namespace WindowsForms
         /// <param name="e"></param>
         private void btnFinalizar_Click(object sender, EventArgs e)
         {
-            frmCargadnoComida f = new frmCargadnoComida(unRegistro);
+            frmEstadoDelPedido f = new frmEstadoDelPedido(unRegistro);
             
             this.OnAvisarPedidoHecho += Mensaje;
             this.OnAvisarPedidoHecho.Invoke();

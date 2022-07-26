@@ -33,4 +33,4 @@ C:\Users\maiam\source\repos\Anzor.Maia.2A.TP4Final\WindowsForms\bin\Debug\net5.0
 C:\Users\maiam\source\repos\Anzor.Maia.2A.TP4Final\WindowsForms\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\maiam\source\repos\Anzor.Maia.2A.TP4Final\WindowsForms\obj\Debug\net5.0-windows\WindowsForms.frmListaRepartidores.resources
 C:\Users\maiam\source\repos\Anzor.Maia.2A.TP4Final\WindowsForms\obj\Debug\net5.0-windows\WindowsForms.frmAltaRepartidor.resources
-C:\Users\maiam\source\repos\Anzor.Maia.2A.TP4Final\WindowsForms\obj\Debug\net5.0-windows\WindowsForms.frmCargadnoComida.resources
+C:\Users\maiam\source\repos\Anzor.Maia.2A.TP4Final\WindowsForms\obj\Debug\net5.0-windows\WindowsForms.frmEstadoDelPedido.resources
